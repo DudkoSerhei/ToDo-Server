@@ -12,11 +12,19 @@
       "env"
     ]
   },
+  "proxy": {
+    "/api": {
+      "target": "<url>",
+      "ws": true
+    }
+  },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "es6-promise": "^4.1.1",
     "express": "^4.16.2",
-    "http": "0.0.0"
+    "http": "0.0.0",
+    "isomorphic-fetch": "^2.2.1"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
